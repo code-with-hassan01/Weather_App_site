@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="weather-container">
+        <!-- App Header -->
+        <div class="app-header">
+            <h1 class="app-title">Weather App</h1>
+        </div>
+
+        <!-- Search Section -->
+        <div class="search-section">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Enter city name..." id="cityInput">
+                <button class="search-btn" id="searchBtn">Search</button>
+            </div>
+        </div>
+
+        <!-- Loading State -->
+        <div class="loading" id="loading">
+            Searching for weather data...
+        </div>
+
+        <!-- Error Message -->
+        <div class="error" id="error">
+            City not found. Please try again.
+        </div>
+
+        <!-- Weather Display -->
+        <div class="weather-info" id="weatherInfo">
+            <div class="weather-display">
+                <div class="city-name" id="cityName">New York</div>
+                <div class="weather-icon" id="weatherIcon">☀️</div>
+                <div class="temperature" id="temperature">72°F</div>
+                <div class="weather-description" id="weatherDescription">Sunny</div>
+                <div class="feels-like" id="feelsLike">Feels like 75°F</div>
+            </div>
+
+            <!-- Weather Details -->
+            <div class="weather-details">
+                <div class="detail-item">
+                    <div class="detail-label">Humidity</div>
+                    <div class="detail-value" id="humidity">65%</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Region</div>
+                    <div class="detail-value" id="region">65%</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Wind Speed</div>
+                    <div class="detail-value" id="windSpeed">8 mph</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Visibility</div>
+                    <div class="detail-value" id="visibility">10 mi</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">UV Index</div>
+                    <div class="detail-value" id="uvIndex">3</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <script src="script.js"></script>
+
+</html>
